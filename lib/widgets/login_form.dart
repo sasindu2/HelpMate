@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 import '../misc/constants.dart';
@@ -37,8 +38,9 @@ class _LoginFormState extends State<LoginForm> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const SizedBoxH10(),
             TextFormField(
-              textInputAction: TextInputAction.continueAction,
+              textInputAction: TextInputAction.next,
               validator: validateEmail,
               controller: emailController,
               decoration: formDecoration(
@@ -46,6 +48,7 @@ class _LoginFormState extends State<LoginForm> {
                 Icons.mail_outline,
               ),
             ),
+            const SizedBoxH10(),
             TextFormField(
               textInputAction: TextInputAction.done,
               validator: validatePassword,
@@ -55,6 +58,37 @@ class _LoginFormState extends State<LoginForm> {
                 Icons.lock_outline,
               ),
             ),
+            const SizedBoxH10(),
+            CupertinoButton(
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                color: Colors.purple,
+                child: const Text(
+                  'Sign in',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold, // Set the text to bold
+                  ),
+                ),
+                onPressed: () {}),
+            const SizedBoxH10(),
+            const Text(
+              'OR',
+              style: TextStyle(
+                  fontFamily: "SF-Pro",
+                  fontSize: 20.0,
+                  color: Colors.purple,
+                  fontWeight: FontWeight.bold),
+            ),
+            const SizedBoxH10(),
+            CupertinoButton(
+                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                color: Colors.purple,
+                child: const Text(
+                  'Sign up',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold, // Set the text to bold
+                  ),
+                ),
+                onPressed: () {})
           ],
         ),
       ),
