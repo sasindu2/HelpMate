@@ -1,3 +1,10 @@
+String? validateName(String? value) {
+  if (value == null || value.isEmpty) {
+    return 'name required!';
+  }
+  return null;
+}
+
 String? validateEmail(String? value) {
   if (value == null || value.isEmpty) {
     return 'email address required!';
@@ -21,6 +28,25 @@ String? validatePassword(String? value) {
           r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[!@#\$&*~]).{8,}$')
       .hasMatch(value)) {
     return 'password must have at least 8 characters or more with one uppercase, one lowercase and one digit with at least one special character.';
+  }
+  return null;
+}
+
+String? validateConfirmPassword(String? value) {
+  if (value == null || value.isEmpty) {
+    return 'please retype password';
+  } else if (validatePassword(value).toString() != value) {
+    return 'password do not match';
+  }
+  return null;
+}
+
+String? validatePhoneNumber(String? value) {
+  if (value == null || value.isEmpty) {
+    return 'phone number required!';
+  } else if (!RegExp(r'/^\(?(\d{3})\)?[- ]?(\d{3})[- ]?(\d{4})$/')
+      .hasMatch(value)) {
+    return 'Must enter valid phone number';
   }
   return null;
 }

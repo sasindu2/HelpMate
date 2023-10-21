@@ -1,4 +1,6 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helpmate/routes/route_manager.dart';
 
 import '../misc/constants.dart';
 import '../misc/validators.dart';
@@ -37,15 +39,17 @@ class _LoginFormState extends State<LoginForm> {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            const SizedBoxH10(),
             TextFormField(
-              textInputAction: TextInputAction.continueAction,
+              textInputAction: TextInputAction.next,
               validator: validateEmail,
               controller: emailController,
               decoration: formDecoration(
-                'Email address',
+                'Email ',
                 Icons.mail_outline,
               ),
             ),
+            const SizedBoxH10(),
             TextFormField(
               textInputAction: TextInputAction.done,
               validator: validatePassword,
@@ -55,6 +59,53 @@ class _LoginFormState extends State<LoginForm> {
                 Icons.lock_outline,
               ),
             ),
+            //forgot password
+            ButtonBar(
+              alignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "Forgot password?",
+                      style: style16Black,
+                    ))
+              ],
+            ),
+            const SizedBoxH10(),
+            CupertinoButton(
+                borderRadius: const BorderRadius.all(Radius.circular(30)),
+                color: Colors.purple,
+                child: const Text(
+                  'Sign In',
+                  style: TextStyle(
+                    fontFamily: "SF-Pro",
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                onPressed: () {}),
+            const SizedBoxH10(),
+            const Text(
+              'OR',
+              style: TextStyle(
+                  fontFamily: "SF-Pro",
+                  fontSize: 20.0,
+                  color: Colors.purple,
+                  fontWeight: FontWeight.bold),
+            ),
+            const SizedBoxH10(),
+            CupertinoButton(
+                borderRadius: const BorderRadius.all(Radius.circular(30)),
+                color: Colors.purple,
+                child: const Text(
+                  'Sign Up',
+                  style: TextStyle(
+                    fontFamily: "SF-Pro",
+                    fontWeight: FontWeight.bold,
+                  ),
+                ),
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, RouteManager.registerPage);
+                })
           ],
         ),
       ),

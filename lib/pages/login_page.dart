@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../misc/constants.dart';
 import '../widgets/login_form.dart';
 
 class LoginPage extends StatelessWidget {
@@ -17,28 +18,27 @@ class LoginPage extends StatelessWidget {
                   Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: <Widget>[
+                      const SizedBoxH50(),
                       Image.asset(
                         'assets/logo.png',
-                        height: 60,
+                        height: 70,
                       ),
                       const SizedBox(
-                        height: 30,
+                        height: 10,
                       ),
-                      SizedBox(
-                        height: MediaQuery.of(context).size.height * 0.1,
-                      ),
+                      const SizedBoxH20(),
                       const Text(
                         "Log In",
                         style: TextStyle(
                             fontFamily: "SF-Pro",
-                            fontSize: 30.0,
+                            fontSize: 25.0,
                             color: Colors.purple,
                             fontWeight: FontWeight.bold),
                       ),
                     ],
                   ),
                   const Padding(
-                    padding: EdgeInsets.all(15.0),
+                    padding: EdgeInsets.all(10.0),
                     child: Center(
                       child: SingleChildScrollView(
                         child: LoginForm(),
