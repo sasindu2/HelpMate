@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:helpmate/routes/route_manager.dart';
 
 import '../misc/constants.dart';
 import '../misc/validators.dart';
@@ -44,7 +45,7 @@ class _LoginFormState extends State<LoginForm> {
               validator: validateEmail,
               controller: emailController,
               decoration: formDecoration(
-                'Email address',
+                'Email ',
                 Icons.mail_outline,
               ),
             ),
@@ -58,14 +59,27 @@ class _LoginFormState extends State<LoginForm> {
                 Icons.lock_outline,
               ),
             ),
+            //forgot password
+            ButtonBar(
+              alignment: MainAxisAlignment.end,
+              children: [
+                TextButton(
+                    onPressed: () {},
+                    child: const Text(
+                      "Forgot password?",
+                      style: style16Black,
+                    ))
+              ],
+            ),
             const SizedBoxH10(),
             CupertinoButton(
-                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                borderRadius: const BorderRadius.all(Radius.circular(30)),
                 color: Colors.purple,
                 child: const Text(
-                  'Sign in',
+                  'Sign In',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold, // Set the text to bold
+                    fontFamily: "SF-Pro",
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
                 onPressed: () {}),
@@ -80,15 +94,18 @@ class _LoginFormState extends State<LoginForm> {
             ),
             const SizedBoxH10(),
             CupertinoButton(
-                borderRadius: const BorderRadius.all(Radius.circular(20)),
+                borderRadius: const BorderRadius.all(Radius.circular(30)),
                 color: Colors.purple,
                 child: const Text(
-                  'Sign up',
+                  'Sign Up',
                   style: TextStyle(
-                    fontWeight: FontWeight.bold, // Set the text to bold
+                    fontFamily: "SF-Pro",
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
-                onPressed: () {})
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, RouteManager.registerPage);
+                })
           ],
         ),
       ),

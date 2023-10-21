@@ -1,6 +1,7 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
+import 'package:helpmate/misc/constants.dart';
 import 'package:helpmate/routes/route_manager.dart';
 
 class Splash extends StatefulWidget {
@@ -35,6 +36,7 @@ class _SplashState extends State<Splash> {
             const SizedBox(
               height: 30,
             ),
+            const SizedBoxH20(),
             const LinearProgressIndicator(
               color: Colors.purple,
             )
