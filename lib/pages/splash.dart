@@ -3,6 +3,7 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:helpmate/misc/constants.dart';
 import 'package:helpmate/routes/route_manager.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class Splash extends StatefulWidget {
   const Splash({super.key});
@@ -37,9 +38,10 @@ class _SplashState extends State<Splash> {
               height: 30,
             ),
             const SizedBoxH20(),
-            const LinearProgressIndicator(
+            LoadingAnimationWidget.prograssiveDots(
               color: Colors.purple,
-            )
+              size: 70,
+            ),
           ],
         ),
       ),
