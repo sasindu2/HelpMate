@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:helpmate/misc/constants.dart';
+import 'package:helpmate/routes/route_manager.dart';
 
 import '../misc/validators.dart';
 
@@ -116,7 +117,9 @@ class _RegisterFormState extends State<RegisterForm> {
                   fontWeight: FontWeight.bold,
                 ),
               ),
-              onPressed: () {}),
+              onPressed: () {
+                Navigator.popAndPushNamed(context, RouteManager.homePage);
+              }),
         ],
       ),
     ));
