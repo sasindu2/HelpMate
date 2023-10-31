@@ -82,7 +82,9 @@ class _LoginFormState extends State<LoginForm> {
                     fontWeight: FontWeight.bold,
                   ),
                 ),
-                onPressed: () {}),
+                onPressed: () {
+                  Navigator.popAndPushNamed(context, RouteManager.homePage);
+                }),
             const SizedBoxH10(),
             const Text(
               'OR',
