@@ -1,6 +1,7 @@
 // ignore_for_file: constant_pattern_never_matches_value_type
 
 import 'package:flutter/material.dart';
+import 'package:helpmate/pages/add_campaign.dart';
 import 'package:helpmate/pages/home_page.dart';
 import 'package:helpmate/pages/splash.dart';
 
@@ -12,6 +13,7 @@ class RouteManager {
   static const String loginPage = '/loginPage';
   static const String registerPage = '/registerPage';
   static const String homePage = '/homePage';
+  static const String addCampaignPage = '/addCampaignPage';
 
   static Route<dynamic>? onGenerateRoute(RouteSettings setting) {
     switch (setting.name) {
@@ -34,6 +36,9 @@ class RouteManager {
       //home page
       case homePage:
         return MaterialPageRoute(builder: (context) => const HomePage());
+
+      case addCampaignPage:
+        return MaterialPageRoute(builder: (context) => AddCampaignPage());
 
       default:
         throw Exception("No route found!");
