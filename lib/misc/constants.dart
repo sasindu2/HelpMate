@@ -16,6 +16,17 @@ InputDecoration formDecoration(String labelText, IconData iconData) {
   );
 }
 
+InputDecoration forDecoration(String labelText) {
+  return InputDecoration(
+    errorStyle: const TextStyle(fontSize: 8),
+    errorMaxLines: 3,
+    labelText: labelText,
+    labelStyle: TextStyle(color: Colors.purple.withOpacity(0.4)),
+    enabledBorder: enabledBorder,
+    focusedBorder: focusedBorder,
+  );
+}
+
 const enabledBorder = OutlineInputBorder(
     borderRadius: BorderRadius.all(
       Radius.circular(30),
@@ -25,7 +36,7 @@ const enabledBorder = OutlineInputBorder(
 const focusedBorder = OutlineInputBorder(
     borderRadius: BorderRadius.all(Radius.circular(20)),
     borderSide: BorderSide(
-      width: 2,
+      width: 1,
       color: Colors.purple,
     ));
 
