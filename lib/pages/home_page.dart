@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helpmate/pages/add_campaign.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -83,11 +84,6 @@ class AddCampaignTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Add Campaign Tab',
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-      ),
-    );
+    return AddCampaignPage();
   }
 }
