@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "294141089754",
+    "project_id": "helpmate-25a42",
+    "storage_bucket": "helpmate-25a42.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:294141089754:android:f2025322bbf2ce0e8552e3",
+        "android_client_info": {
+          "package_name": "com.example.helpmate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCpgBOIK6kCUmvOcoo_LGAP0D2K2CkaK0Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
