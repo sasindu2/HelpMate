@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:helpmate/pages/add_campaign.dart';
+import 'package:helpmate/pages/news_feed.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -34,8 +35,8 @@ class _HomePageState extends State<HomePage> {
         },
         items: const [
           BottomNavigationBarItem(
-            icon: Icon(Icons.location_pin),
-            label: 'Location',
+            icon: Icon(Icons.newspaper),
+            label: 'News Feed',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
@@ -56,12 +57,7 @@ class LocationTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Location Tab',
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-      ),
-    );
+    return const NewsFeed();
   }
 }
 

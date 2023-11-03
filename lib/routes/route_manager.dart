@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:helpmate/pages/add_campaign.dart';
 import 'package:helpmate/pages/home_page.dart';
+import 'package:helpmate/pages/news_feed.dart';
 import 'package:helpmate/pages/splash.dart';
 
 import '../pages/login_page.dart';
@@ -14,6 +15,7 @@ class RouteManager {
   static const String registerPage = '/registerPage';
   static const String homePage = '/homePage';
   static const String addCampaignPage = '/addCampaignPage';
+  static const String newsFeed = '/NewsFeed';
 
   static Route<dynamic>? onGenerateRoute(RouteSettings setting) {
     switch (setting.name) {
@@ -39,6 +41,9 @@ class RouteManager {
 
       case addCampaignPage:
         return MaterialPageRoute(builder: (context) => AddCampaignPage());
+
+      case newsFeed:
+        return MaterialPageRoute(builder: (context) => const NewsFeed());
 
       default:
         throw Exception("No route found!");
