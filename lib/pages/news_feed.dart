@@ -14,9 +14,9 @@ class __NewsFeedState extends State<NewsFeed> {
   List<Color> _getActiveColor(int index) {
     return [
       if (_selectedIndex == index)
-        Color.fromARGB(255, 127, 71, 159)
+        const Color.fromARGB(255, 127, 71, 159)
       else
-        Color.fromARGB(255, 186, 144, 194),
+        const Color.fromARGB(255, 186, 144, 194),
     ];
   }
 
@@ -32,6 +32,7 @@ class __NewsFeedState extends State<NewsFeed> {
       appBar: AppBar(
         backgroundColor: Colors.white,
         leadingWidth: 2,
+        elevation: 0,
         actions: [
           Expanded(
             child: Row(
@@ -49,7 +50,7 @@ class __NewsFeedState extends State<NewsFeed> {
                   inactiveFgColor: Colors.white,
                   initialLabelIndex: _selectedIndex, // Set the initial index
                   totalSwitches: 2,
-                  labels: ['News Feed', 'Map'],
+                  labels: const ['News Feed', 'Map'],
                   //icons: [
                   //  Icons.book_online_outlined,
                   //  Icons.location_city_sharp

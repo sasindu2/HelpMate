@@ -39,8 +39,17 @@ class _AddCampaignPageState extends State<AddCampaignPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Add Campaign'),
+        title: const Text(
+          'Add Campaign',
+          style: TextStyle(
+              fontFamily: "SF-Pro",
+              fontSize: 25.0,
+              color: Colors.purple,
+              fontWeight: FontWeight.bold),
+        ),
         centerTitle: true,
+        backgroundColor: Colors.white,
+        elevation: 0,
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
