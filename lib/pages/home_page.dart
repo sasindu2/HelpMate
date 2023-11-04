@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:helpmate/pages/Home.dart';
 import 'package:helpmate/pages/add_campaign.dart';
 import 'package:helpmate/pages/news_feed.dart';
 
@@ -66,12 +67,7 @@ class HomeTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Center(
-      child: Text(
-        'Home Tab',
-        style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-      ),
-    );
+    return const EditProfileUI();
   }
 }
 
