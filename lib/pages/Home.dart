@@ -18,12 +18,12 @@ class _EditPrfoileUIState extends State<EditProfileUI> {
   @override
   Widget build(BuildContext context) {
     final imgList = [
-      'https://usercontent2.hubstatic.com/5630013_f520.jpg'
-          'https://th.bing.com/th/id/R.feae57758decb824351e41731c6b97d2?rik=6lEFqKz7IvxWiw&riu=http%3a%2f%2fstatic.dailymirror.lk%2fmedia%2fimages%2fimage_1465131350-153524ea61.jpg&ehk=XnszjBBcl5N24FTSl4BRnsnjoCFEvf7bPEFFrbGR55A%3d&risl=&pid=ImgRaw&r=0'
-          'https://th.bing.com/th/id/R.dfe90cd7057bac49472fe291f3c6b559?rik=53BYuZsS62ZonQ&pid=ImgRaw&r=0'
-          'https://th.bing.com/th/id/OIP.eGpXN2wkjP0F01N3TYwMKQHaE8?pid=ImgDet&rs=1'
-          'https://th.bing.com/th/id/OIP.kE-vLtxRewaIRaXtgVuoFwHaFj?pid=ImgDet&rs=1'
-          'https://th.bing.com/th/id/R.bbf63f30d8147c0718f23a9c053d9d96?rik=rRn6mBOVVhJTjA&riu=http%3a%2f%2fwww.thepapare.com%2fwp-content%2fuploads%2f1531836040417715985437.jpg&ehk=Vl8NyuRe2WaOnYj6jlUrzA6u3xQg1ouxpbOdl5Ganz4%3d&risl=&pid=ImgRaw&r=0'
+      'https://usercontent2.hubstatic.com/5630013_f520.jpg',
+      'https://th.bing.com/th/id/R.feae57758decb824351e41731c6b97d2?rik=6lEFqKz7IvxWiw&riu=http%3a%2f%2fstatic.dailymirror.lk%2fmedia%2fimages%2fimage_1465131350-153524ea61.jpg&ehk=XnszjBBcl5N24FTSl4BRnsnjoCFEvf7bPEFFrbGR55A%3d&risl=&pid=ImgRaw&r=0',
+      'https://th.bing.com/th/id/R.dfe90cd7057bac49472fe291f3c6b559?rik=53BYuZsS62ZonQ&pid=ImgRaw&r=0',
+      'https://th.bing.com/th/id/OIP.eGpXN2wkjP0F01N3TYwMKQHaE8?pid=ImgDet&rs=1',
+      'https://th.bing.com/th/id/OIP.kE-vLtxRewaIRaXtgVuoFwHaFj?pid=ImgDet&rs=1',
+      'https://th.bing.com/th/id/R.bbf63f30d8147c0718f23a9c053d9d96?rik=rRn6mBOVVhJTjA&riu=http%3a%2f%2fwww.thepapare.com%2fwp-content%2fuploads%2f1531836040417715985437.jpg&ehk=Vl8NyuRe2WaOnYj6jlUrzA6u3xQg1ouxpbOdl5Ganz4%3d&risl=&pid=ImgRaw&r=0',
     ];
     final List<Widget> imageSliders = imgList
         .map((item) => Container(
