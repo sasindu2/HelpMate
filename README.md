@@ -1,16 +1,19 @@
-# helpmate
+# HelpMate Mobile App
 
-A new Flutter project.
+HelpMate is a mobile application designed to connect individuals facing economic hardship in Sri Lanka with genuine assistance from willing volunteers and donors. The app was developed as part of the HackX Inter-University Hackathon competition in 2023.
 
-## Getting Started
+## Features
+- **User-Friendly Interface**: Easy navigation for both seekers and donors.
+- **Volunteer & Donor Profiles**: Allows volunteers and donors to create profiles for better connections.
+- **Secure Communication**: Facilitates safe and secure interactions.
+- **Localized Assistance**: Focuses on providing support specific to Sri Lanka.
 
-This project is a starting point for a Flutter application.
+## Technologies Used
+- **Flutter**: For building a cross-platform mobile application.
+- **Dart**: The programming language used for the app's functionality.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## How It Works
+1. **Sign Up**: Users sign up as a volunteer, donor, or individual seeking help.
+2. **Create Profile**: Volunteers and donors create detailed profiles.
+3. **Connect**: Seekers browse available donors and volunteers to connect for assistance.
+4. **Assist**: Volunteers and donors respond to requests and provide help.
